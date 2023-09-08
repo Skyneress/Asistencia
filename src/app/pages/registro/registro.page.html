@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium">
+    <ion-img src="assets/icon/logoduoc.png"></ion-img>
+  </ion-toolbar>
+  <ion-button size="small" id="Bvolver" color="warning"  [routerLink]="['/login']">
+    <ion-icon slot="start" name="arrow-back"></ion-icon>
+  </ion-button>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-card>
+      <ion-card-header>
+        <H1>Registro</H1>
+      </ion-card-header>
+    
+      <ion-card-content>
+
+        <ion-item>
+          <ion-input
+          type="email"
+          fill="solid"
+          label="Email"
+          labelPlacement="floating"
+          helperText="Ingrese un email correcto"
+          errorText="Invalid email"
+          ngModel
+          email
+        ></ion-input>
+        
+        </ion-item>
+
+
+        <ion-item>
+          <ion-input
+          type="number"
+          fill="solid"
+          label="RUT"
+          labelPlacement="floating"
+          helperText="Ingrese su rut"
+          errorText="Invalid email"
+          ngModel
+          email
+        ></ion-input>
+        
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+          type="text"
+          fill="solid"
+          label="Nombre"
+          labelPlacement="floating"
+          helperText="Ingrese su nombre"
+          errorText="Invalid email"
+          ngModel
+          email
+        ></ion-input>
+        
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+          type="text"
+          fill="solid"
+          label="Apellido"
+          labelPlacement="floating"
+          helperText="Ingrese su apellido"
+          errorText="Invalid email"
+          ngModel
+          email
+        ></ion-input>
+        
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+          type="password"
+          fill="solid"
+          label="Contraseña"
+          labelPlacement="floating"
+          helperText="Escriba su contraseña"
+          errorText="Invalid email"
+          ngModel
+          email
+        ></ion-input>
+        
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-header>
+</ion-content>

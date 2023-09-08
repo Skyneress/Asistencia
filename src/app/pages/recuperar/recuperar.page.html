@@ -1,0 +1,47 @@
+
+  <ion-header [translucent]="true">
+    <ion-toolbar color="medium">
+      <ion-img src="assets/icon/logoduoc.png"></ion-img>
+    </ion-toolbar>
+    <ion-button size="small" id="Bvolver" color="warning"  [routerLink]="['/login']">
+      <ion-icon slot="start" name="arrow-back">
+      </ion-icon>
+    </ion-button>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+
+ <h1 id="labelR">Recuperar contraseña</h1>
+
+    <ion-card id="colorCard">  
+      <ion-card-content>
+        <ion-item>
+          <ion-input
+          type="password"
+          fill="solid"
+          label="Contraseña"
+          labelPlacement="floating"
+          helperText="Escriba su nueva contraseña"
+          errorText="contraseña demasiado corta"
+          ngModel
+          email
+        ></ion-input>  
+        </ion-item>
+        <ion-item>
+          <ion-input
+          type="password"
+          fill="solid"
+          label="Reingrese su contraseña"
+          labelPlacement="floating"
+          helperText="Escriba de nuevo su nueva contraseña"
+          errorText="Las contraseñas no coinciden"
+          ngModel
+          email
+        ></ion-input>
+        </ion-item>
+        <ion-button id="aceptar" size="small"color="warning" [routerLink]="['/login']">
+          Aceptar
+        </ion-button>  
+      </ion-card-content>
+    </ion-card>
+</ion-content>

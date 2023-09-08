@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="medium">
+    <!-- <ion-title>login</ion-title> -->
+    <ion-img src="assets/icon/logoduoc.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
+ion-card-content
+<ion-content [fullscreen]="true">
+
+<!-- <ion-img src="assets/icon/logoduoc.png"></ion-img> -->
+
+  <ion-card id="formLogin" id="ColorCard"color="dark">
+    <ion-card-content>
+      <ion-item>    
+        <ion-input [(ngModel)]="usuario"label="Usuario" labelPlacement="floating" placeholder="Introduce tu correo" ></ion-input>
+      </ion-item>  
+
+      <ion-item>
+        <ion-input type="password" label="Contraseña" labelPlacement="floating" placeholder="Introduce tu contraseña"></ion-input>
+      </ion-item> 
+      <ion-button color="warning" [routerLink]="['/registro']">
+        <ion-icon name="person"></ion-icon>
+        Registrarse
+      </ion-button>
+      <ion-button (click)="menu" color="warning" [routerLink]="['/menu']">
+        <ion-icon name="person"></ion-icon>
+        Iniciar Sesion
+      </ion-button>  
+      
+    </ion-card-content>
+    <ion-button id="BR" color="light" size="medium" fill="clear" [routerLink]="['/recuperar']">¿Has olvidado tu contraseña?</ion-button>    
+
+  </ion-card>
+  
+
+</ion-content>
